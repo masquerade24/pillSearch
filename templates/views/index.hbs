@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirQuality</title>
+</head>
+
+<body>
+    <div class="main-contender">
+        {{>header}}
+        <p>의약품 정보를 얻기위한 데이터를 입력해주세요. </p>
+        <form action="/pill" method="post">
+            <input placeholder="표시" name="print_letter">
+            <input placeholder="모양" name="shape">
+            <input placeholder="색깔" name="color">
+            <button>Search</button>
+        </form>
+        {{>footer}}
+    </div>
+</body>
+
+</html>

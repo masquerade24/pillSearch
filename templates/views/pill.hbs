@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabletInfo</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>품목명: <span id="message-0">{{itemName}}</span></p>
+        <p>업체명: <span id="message-1">{{entpName}}</span></p>
+        <p>DUR성분코드: <span id="message-2">{{ingrCode}}</span></p>
+        <p>부작용: <span id="message-3">{{prohbtContent}}</span></p>
+        <p>약효분류: <span id="message-4">{{className}}</span></p>
+        <p>병용금기품목명: <span id="message-5">{{mixtureItemName}}</span></p>
+        <p>테스트: <span id="message-6">{{test}}</span></p>
+
+        {{>footer}}
+    </div>
+</body>
+
+</html>
