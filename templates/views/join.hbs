@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <div class="main-contender">
+    <div class="contender">
         {{>header}}
-        <p>의약품 정보를 얻기위한 데이터를 입력해주세요. </p>
-        <form action="/pill" method="post">
-            <input placeholder="표시" name="print_letter">
-            <input placeholder="모양" name="shape">
-            <input placeholder="색깔" name="color">
-            <button>Search</button>
+        <p>회원가입 고고싱</p>
+        <form action="/auth/join" method="post">
+            <input placeholder="email" name="email">
+            <input placeholder="name" name="name">
+            <input placeholder="password" name="password">
+            <button>회원가입</button>
         </form>
         {{>footer}}
     </div>
